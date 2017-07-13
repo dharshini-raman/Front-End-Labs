@@ -31,3 +31,33 @@ console.log(taxRate);
 }
 
 console.log(myHouse.make)
+
+
+function convertDollarsToRupees(dollars) {
+    var rateOfChange = 64.45;
+    var v1 = dollars * rateOfChange;
+    return v1.toFixed(2);
+}
+
+var endPrice = convertDollarsToRupees(98.99)
+console.log(endPrice)
+
+var endPrice2 = convertDollarsToRupees(.02)
+console.log(endPrice2)
+
+function getFullName(FN, LN) {
+    return FN + " " + LN
+}
+
+var fullname1 = getFullName("John", "Doe");
+
+console.log(fullname1)
+
+function calculateBMI(weight, height) {
+    var answer = (weight / (height * height)) * 703;
+    return answer.toFixed(1)
+}
+
+var BMI = calculateBMI("37", "39");
+
+console.log(BMI);
