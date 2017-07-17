@@ -58,6 +58,13 @@ function calculateBMI(weight, height) {
     return answer.toFixed(1)
 }
 
-var BMI = calculateBMI("37", "39");
+var BMI = calculateBMI("175", "68");
 
-console.log(BMI);
+console.log("BMI " + BMI);
+
+function convertCelsiusToFahrenheit(celsius) {
+var fahrenheit = (celsius*9)/5 + 32;
+console.log(celsius + '°C is ' + fahrenheit + '°F');
+}
+
+var fahrenheit = convertCelsiusToFahrenheit(32)
